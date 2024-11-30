@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NFTAuctionPlatform.Repository\NFTAuctionPlatform.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HUG.CRUDv2">
+      <HintPath>..\NFTAuctionPlatform.Lib\HUG.CRUDv2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

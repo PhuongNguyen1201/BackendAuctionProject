@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NFTAuctionPlatform.Repository\NFTAuctionPlatform.Repository.csproj" />
+    <ProjectReference Include="..\NFTAuctionPlatform.Services\NFTAuctionPlatform.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HUG.CRUDv2">
+      <HintPath>..\NFTAuctionPlatform.Lib\HUG.CRUDv2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
